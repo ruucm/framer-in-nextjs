@@ -126,6 +126,11 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
+"@juggle/resize-observer@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.3.1.tgz#b50a781709c81e10701004214340f25475a171a0"
+  integrity sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw==
+
 "@napi-rs/triples@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@napi-rs/triples/-/triples-1.0.3.tgz#76d6d0c3f4d16013c61e45dfca5ff1e6c31ae53c"
@@ -1366,10 +1371,28 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.2.tgz#64bfed5cb68fe3ca78b3eb214ad97b63bedce561"
   integrity sha512-JaTY/wtrcSyvXJl4IMFHPKyFur1sE9AUqc0QnhOaJ0CxHtAoIV8pYDzeEfAaNEtGkOfq4gr3LBFmdXW5mOQFnA==
 
+fontfaceobserver@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/fontfaceobserver/-/fontfaceobserver-2.1.0.tgz#e2705d293e2c585a6531c2a722905657317a2991"
+  integrity sha512-ReOsO2F66jUa0jmv2nlM/s1MiutJx/srhAe2+TE8dJCMi02ZZOcCTxTCQFr3Yet+uODUtnr4Mewg+tNQ+4V1Ng==
+
 foreach@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
   integrity sha1-C+4AUBiusmDQo6865ljdATbsG5k=
+
+framer-motion@5.0.0-beta.23:
+  version "5.0.0-beta.23"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-5.0.0-beta.23.tgz#185f3b22f412cf2c85df999e71fd77ee1e2b7335"
+  integrity sha512-KV+PAWrMpmBijLu4jjrn6S5xG6stkazHLO1SIlTLTm43wb6bLQ4phQYKWjflCaPC12Aq9zga2kEnynAmF79hRg==
+  dependencies:
+    framesync "5.3.0"
+    hey-listen "^1.0.8"
+    popmotion "9.4.0"
+    style-value-types "4.1.4"
+    tslib "^2.1.0"
+  optionalDependencies:
+    "@emotion/is-prop-valid" "^0.8.2"
 
 framer-motion@^4.1.17:
   version "4.1.17"
@@ -1384,10 +1407,16 @@ framer-motion@^4.1.17:
   optionalDependencies:
     "@emotion/is-prop-valid" "^0.8.2"
 
-framer@1.2.30:
-  version "1.2.30"
-  resolved "https://registry.yarnpkg.com/framer/-/framer-1.2.30.tgz#12d801fd60e6baed0f1e547aff5341b9f04ae564"
-  integrity sha512-ekfRJXJv4ohORWVzE0FXEo1DDQzs4RfECF+h1rM9DsoIHL538m8qwYpVbX8/bIrv3qTnjGeEkg/3vJhzre9L9Q==
+framer@^1.3.7-alpha.27:
+  version "1.3.7-alpha.27"
+  resolved "https://registry.yarnpkg.com/framer/-/framer-1.3.7-alpha.27.tgz#dc6503d194fc7b5167a0439c676603a74421aa0d"
+  integrity sha512-O9/amtsooG3qXSXKPFKxW9B22wUJS27MZSb93QfAtO8qBbTKGjH29AbxpmnysEE/DWH3oACMnTiZM55JhXIwVA==
+  dependencies:
+    "@emotion/is-prop-valid" "^0.8.2"
+    "@juggle/resize-observer" "^3.3.1"
+    fontfaceobserver "^2.1.0"
+    framer-motion "5.0.0-beta.23"
+    hsluv "^0.0.3"
 
 framesync@5.3.0:
   version "5.3.0"
@@ -1562,6 +1591,11 @@ hosted-git-info@^2.1.4:
   version "2.8.9"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
   integrity sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
+
+hsluv@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/hsluv/-/hsluv-0.0.3.tgz#829107dafb4a9f8b52a1809ed02e091eade6754c"
+  integrity sha1-gpEH2vtKn4tSoYCe0C4JHq3mdUw=
 
 http-errors@1.7.3:
   version "1.7.3"
@@ -2435,6 +2469,16 @@ popmotion@9.3.6:
   version "9.3.6"
   resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-9.3.6.tgz#b5236fa28f242aff3871b9e23721f093133248d1"
   integrity sha512-ZTbXiu6zIggXzIliMi8LGxXBF5ST+wkpXGEjeTUDUOCdSQ356hij/xjeUdv0F8zCQNeqB1+PR5/BB+gC+QLAPw==
+  dependencies:
+    framesync "5.3.0"
+    hey-listen "^1.0.8"
+    style-value-types "4.1.4"
+    tslib "^2.1.0"
+
+popmotion@9.4.0:
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-9.4.0.tgz#56306854dbbe7e21bb06bdde43f52cf17c4e2ac8"
+  integrity sha512-FGnHjc8iDMrAwuZhka8eNx0yzcaufDqyZzW9vjJebRuC6BryR5ICyBmUH+wCgUuuaFSSU4r6oT2WtnbnDGcr3g==
   dependencies:
     framesync "5.3.0"
     hey-listen "^1.0.8"
