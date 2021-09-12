@@ -2,7 +2,6 @@ import type { NextPage } from "next"
 import Head from "next/head"
 import React from "react"
 import Callout from "../components/callout"
-import MyButton from "../components/my-button"
 import Spinner from "../components/spinner"
 
 const Home: NextPage = () => {
@@ -20,8 +19,6 @@ const Home: NextPage = () => {
         }}
       />
       <Spinner />
-      {/* addFont() issue */}
-      <MyButton />
     </div>
   )
 }
