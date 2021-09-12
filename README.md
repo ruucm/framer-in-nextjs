@@ -2,9 +2,6 @@
 
 Some experiments to implement Framer Modules in nextjs.
 
-Problems ("framer": "1.2.30")
+Problems ("framer": "1.3.7-alpha.27")
 
-1. `import { motion } from 'framer'`
-2. `addFonts(...)`
-3. `addPropertyControls(...)`
-4. Text component styles (not implemented to website's head properly)
+1. Fonts & Text Comp (only works on Inter font)
