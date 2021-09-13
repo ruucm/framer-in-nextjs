@@ -7,7 +7,7 @@ const getDynamicComponent = (c: any) =>
     loading: () => <p>Loading...</p>,
   })
 
-const Test = () => {
+const TemplatePage = () => {
   const router = useRouter()
   const { component } = router.query
 
@@ -16,4 +16,4 @@ const Test = () => {
   return <DynamicComponent />
 }
 
-export default Test
+export default TemplatePage
